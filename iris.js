@@ -51,5 +51,6 @@ model.compile({
 const startTime = Date.now()
 model.fit(trainingData, outputData, {epochs: 100})
   .then((history) => {
-    console.log('Done!!!', Date.now() - startTime)
+    // console.log(history)
+    model.predict(testingData).print()
   })

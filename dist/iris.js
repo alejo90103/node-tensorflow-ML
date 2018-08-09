@@ -1067,7 +1067,8 @@ model.compile({
 // train/fit our network
 const startTime = Date.now();
 model.fit(trainingData, outputData, { epochs: 100 }).then(history => {
-  console.log('Done!!!', Date.now() - startTime);
+  // console.log(history)
+  model.predict(testingData).print();
 });
 },{"./iris.json":"iris.json","./iris-testing.json":"iris-testing.json"}]},{},["iris.js"], null)
 //# sourceMappingURL=/iris.map

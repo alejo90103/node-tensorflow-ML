@@ -1,0 +1,19 @@
+{
+  "name": "flower-tensorflow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "iris.js",
+  "scripts": {
+    "start": "parcel --target=node iris.js & nodemon dist/iris.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alejandro Herrera",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow/tfjs": "^0.12.4",
+    "@tensorflow/tfjs-node": "^0.1.11",
+    "node-gyp": "^3.8.0",
+    "nodemon": "^1.18.3",
+    "parcel": "^1.9.7"
+  }
+}
